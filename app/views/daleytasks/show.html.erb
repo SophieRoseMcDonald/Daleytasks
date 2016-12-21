@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Who:</strong>
+  <%= @daleytask.who %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @daleytask.when %>
+</p>
+
+<p>
+  <strong>What:</strong>
+  <%= @daleytask.what %>
+</p>
+
+<%= link_to 'Edit', edit_daleytask_path(@daleytask) %> |
+<%= link_to 'Back', daleytasks_path %>

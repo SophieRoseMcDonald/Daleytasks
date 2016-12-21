@@ -1,0 +1,1 @@
+json.partial! "daleytasks/daleytask", daleytask: @daleytask

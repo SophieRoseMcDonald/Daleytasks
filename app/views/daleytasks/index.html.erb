@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Daleytasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Who</th>
+      <th>When</th>
+      <th>What</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @daleytasks.each do |daleytask| %>
+      <tr>
+        <td><%= daleytask.who %></td>
+        <td><%= daleytask.when %></td>
+        <td><%= daleytask.what %></td>
+        <td><%= link_to 'Show', daleytask %></td>
+        <td><%= link_to 'Edit', edit_daleytask_path(daleytask) %></td>
+        <td><%= link_to 'Destroy', daleytask, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Daleytask', new_daleytask_path %>
