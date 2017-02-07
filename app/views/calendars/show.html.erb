@@ -14,7 +14,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <%= calendars @date do |date| %>
+    <%= calendars_url @date do |date| %>
       <%= date.day %>
       <% if @events_by_date[date] %>
         <ul>

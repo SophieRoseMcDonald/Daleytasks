@@ -1,3 +1,26 @@
-// Place all the styles related to the daleytasks controller here.
+
+  * {
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+div.container {
+  border-color: yellow;
+  padding: 10px;
+  margin: 5px
+
+}
+
+#welcomenote {
+  font-size: 10px;
+  font-color: blue;
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+div.footer {
+
+}
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
