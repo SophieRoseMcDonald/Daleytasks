@@ -1,10 +1,10 @@
-<%= form_for(daleytask) do |f| %>
-  <% if daleytask.errors.any? %>
+<%= form_for (todolist) do |f| %>
+  <% if todolist.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(daleytask.errors.count, "error") %> prohibited this daleytask from being saved:</h2>
+      <h2><%= pluralize(todolist.errors.count, "error") %> prohibited this todolist from being saved:</h2>
 
       <ul>
-      <% daleytask.errors.full_messages.each do |message| %>
+      <% todolist.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -14,13 +14,13 @@
   <div class="dropdown">
 
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Name
+    Todolist
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Joel</a></li>
-    <li><a href="#">Sophie</a></li>
-    <li><a href="#">Lachlan</a></li>
+    <li><a href="#">Grocery Shop</a></li>
+    <li><a href="#">Butcher</a></li>
+    <li><a href="#">Pick Lachlan up</a></li>
   </ul>
 
   </div>

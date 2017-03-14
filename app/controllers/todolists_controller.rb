@@ -28,7 +28,7 @@ def create
 
   respond_to do |format|
     if @todolists.save
-      format.html { redirect_to @todolists, notice: 'New task was successfully created.' }
+      format.html { redirect_to @todolist, notice: 'New task was successfully created.' }
       format.json { render :show, status: :created, location: @todolists}
     else
       format.html { render :new }
